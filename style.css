@@ -1,0 +1,15 @@
+img {
+  transition: filter 0.5s;
+}
+.lazy-img {
+  filter: blur(20px);
+}
+
+section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
