@@ -14,8 +14,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Leckerli One|Open Sans|Montserrat|DM Sans"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <script defer src="../script.js"></script>
   </head>
   <body>
     <nav class="navbar sticky-top navbar-expand-lg bg-warning">
@@ -41,83 +41,138 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="./index.html">Home</a>
+              <a class="nav-link" href="/routes/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./menu.html">Menu</a>
+              <a class="nav-link" href="/routes/menu.html">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./reservations.html">Reservations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./about.html" aria-current="page"
-                >About Us</a
+              <a class="nav-link" href="/routes/reservations.html"
+                >Reservations</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./testimonials.html">Testimonials</a>
+              <a class="nav-link" href="/routes/about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./locations.html">Locations</a>
+              <a class="nav-link active" href="/routes/testimonials.html"
+                >Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/routes/locations.html">Locations</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container mt-4" style="font-family: DM Sans">
-      <div class="row align-items-center">
-        <div class="col-md-6 mb-3 fs-6">
-          <h1 class="">
-            <span style="font-family: Leckerli One">Who are we?</span>
-          </h1>
-          Our journey began decades ago when our grandparents, Italian
-          immigrants, brought with them the love for traditional, authentic
-          Italian cuisine. The aroma of freshly baked bread, the warmth of
-          homemade sauces, and the joy of sharing meals with loved ones became
-          the foundation of our family's culinary heritage. <br />Inspired by
-          our family's traditions and the desire to share our love for pizza
-          with the world, we opened
-          <span style="font-family: Leckerli One" class="fs-5"
-            >Pizza Haven!</span
-          >
-          Our vision was simple yet profound: to create a haven where people
-          could experience the true essence of Italian pizza, crafted with love,
-          authenticity, and the finest ingredients.
-        </div>
-        <div class="col-md-6">
+
+    <div
+      id="carouselExampleRide"
+      class="carousel slide text-center carousel-dark my-4 container"
+      data-bs-ride="true"
+    >
+      <h1 class="display-4 my-5" style="font-family: Leckerli One">
+        What Our Customers Are Saying
+      </h1>
+      <div class="carousel-inner" style="font-family: DM Sans">
+        <div class="carousel-item active">
           <img
-            src="https://images.unsplash.com/photo-1651981075280-9a9e01acbff0?q=80&w=1426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""
-            class="img-fluid lazy-img rounded"
+            class="rounded-circle shadow-1-strong my-4"
+            src="https://images.unsplash.com/photo-1620794108219-aedbaded4eea?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="avatar"
+            style="width: 150px"
           />
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <h5 class="mb-3">Kate</h5>
+              <!-- <p>Photographer</p> -->
+              <p class="text-dark">
+                <i class="fas fa-quote-left pe-2"></i>
+                The moment I stepped into
+                <span style="font-family: Leckerli One">Pizza Haven</span>, I
+                knew I was in for a treat. The pizza exceeded all my
+                expectations! This place has become my go-to spot for a
+                delicious and satisfying pizza experience.
+                <i class="fas fa-quote-right pe-2"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="rounded-circle shadow-1-strong mb-4"
+            src="https://images.unsplash.com/photo-1567784177951-6fa58317e16b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="avatar"
+            style="width: 150px"
+          />
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <h5 class="mb-3">Mark</h5>
+              <!-- <p>Web Developer</p> -->
+              <p class="text-dark">
+                <i class="fas fa-quote-left pe-2"></i>
+                I finally found an authentic Italian pizza at
+                <span style="font-family: Leckerli One">Pizza Haven</span>. The
+                flavors were incredible, and the thin, chewy crust was a work of
+                art.
+                <span style="font-family: Leckerli One">Pizza Haven</span>
+                has become my favorite place for a true taste of Italy.
+                <i class="fas fa-quote-right pe-2"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="rounded-circle shadow-1-strong mb-4"
+            src="https://images.unsplash.com/photo-1614174568206-7620823e6aee?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="avatar"
+            style="width: 150px"
+          />
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <h5 class="mb-3">Sarah</h5>
+              <!-- <p>UX Designer</p> -->
+              <p class="text-dark">
+                <i class="fas fa-quote-left pe-2"></i>
+                As a vegetarian, finding a pizza place that caters to my needs
+                can be a challenge. But at
+                <span style="font-family: Leckerli One">Pizza Haven</span>, I
+                found a haven for pizza-loving vegetarians like myself. Their
+                Veggie Supreme pizza is simply divine.
+                <span style="font-family: Leckerli One">Pizza Haven</span>
+                has become my go-to place for delicious vegetarian pizza
+                <i class="fas fa-quote-right pe-2"></i>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="p-3 my-4 text-center">
-      <!-- <hr class="bg-light mx-4" /> -->
-      <div class="row align-items-center m-lg-5">
-        <div class="col-md mb-3 order-lg-last" style="font-family: DM Sans">
-          <h1>
-            <span style="font-family: Leckerli One">What we stand for!</span>
-          </h1>
-          Our vision extends beyond the pizza itself. We envision
-          <span style="font-family: Leckerli One" class="fs-5"
-            >Pizza Haven</span
-          >
-          as a place where people come together, forging connections, and
-          creating cherished memories. Our warm and inviting atmosphere is
-          designed to foster a sense of community, where families, friends, and
-          colleagues can gather, laugh, and savor the simple pleasures of life
-          over a delicious meal.
-        </div>
-        <div class="col-md order-lg-first">
-          <img
-            src="https://images.unsplash.com/photo-1600628421066-f6bda6a7b976?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""
-            class="img-fluid lazy-img rounded"
-          />
-        </div>
-      </div>
+      <button
+        class="carousel-control-prev btn"
+        type="button"
+        data-bs-target="#carouselExampleRide"
+        data-bs-slide="prev"
+      >
+        <span
+          class="carousel-control-prev-icon bg-dark rounded p-3"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleRide"
+        data-bs-slide="next"
+      >
+        <span
+          class="carousel-control-next-icon bg-dark rounded p-3"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     <div class="bg-body-tertiary p-3" style="font-family: DM Sans">
       <footer class="py-2 mt-5">
@@ -126,23 +181,25 @@
             <h5>Guide</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
-                <a class="nav-link p-0" href="./menu.html">Menu</a>
+                <a class="nav-link p-0" href="/routes/menu.html">Menu</a>
               </li>
               <li class="nav-item mb-2">
-                <a class="nav-link p-0" href="./reservations.html"
+                <a class="nav-link p-0" href="/routes/reservations.html"
                   >Make a Reservation</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a class="nav-link p-0" href="./testimonials.html"
+                <a class="nav-link p-0" href="/routes/testimonials.html"
                   >Testimonials</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a class="nav-link p-0" href="./about.html">About Us</a>
+                <a class="nav-link p-0" href="/routes/about.html">About Us</a>
               </li>
               <li class="nav-item mb-2">
-                <a class="nav-link p-0" href="./locations.html">Locations</a>
+                <a class="nav-link p-0" href="/routes/locations.html"
+                  >Locations</a
+                >
               </li>
             </ul>
           </div>
@@ -194,7 +251,7 @@
                 </a>
               </div>
               <div class="col-1">
-                <a href="mailto:" class="text-dark"
+                <a href="mailto:cm119026@gmail.com" class="text-dark"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="28"
@@ -221,7 +278,7 @@
               src="apple-touch-icon.png"
               alt=""
               style="height: 2rem"
-              class="img-fluid lazy-img m-1"
+              class="img-fluid m-1"
             />
             &copy; 2024 Pizza Haven. All rights reserved.
           </p>

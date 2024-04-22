@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <title>Pizza Haven</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,22 +14,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Leckerli One|Open Sans|Montserrat|DM Sans"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      defer
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
-    <script defer src="map.js"></script>
-
-    <title>Pizza Haven</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script defer src="../script.js"></script>
   </head>
   <body>
     <nav class="navbar sticky-top navbar-expand-lg bg-warning">
@@ -55,40 +41,89 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="./index.html">Home</a>
+              <a class="nav-link" href="/routes/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./menu.html">Menu</a>
+              <a class="nav-link" href="/routes/menu.html">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./reservations.html">Reservations</a>
+              <a class="nav-link" href="/routes/reservations.html"
+                >Reservations</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./about.html" aria-current="page"
+              <a
+                class="nav-link active"
+                href="/routes/about.html"
+                aria-current="page"
                 >About Us</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./testimonials.html">Testimonials</a>
+              <a class="nav-link" href="/routes/testimonials.html"
+                >Testimonials</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./locations.html">Locations</a>
+              <a class="nav-link" href="/routes/locations.html">Locations</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container text-center">
-      <div class="row mt-5 mx-4 align-items-center g-5 mb-4">
-        <div class="col-md-4 fs-4" style="font-family: DM Sans">
-          Find a Pizza Haven branch near you!
-          <div class="mt-3">
-            <button class="btn btn-warning" id="tema">Tema</button>
-            <button class="btn btn-primary" id="accra">Accra</button>
-            <button class="btn btn-secondary" id="kumasi">Kumasi</button>
-          </div>
+    <div class="container mt-4" style="font-family: DM Sans">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-3 fs-6">
+          <h1 class="">
+            <span style="font-family: Leckerli One">Who are we?</span>
+          </h1>
+          Our journey began decades ago when our grandparents, Italian
+          immigrants, brought with them the love for traditional, authentic
+          Italian cuisine. The aroma of freshly baked bread, the warmth of
+          homemade sauces, and the joy of sharing meals with loved ones became
+          the foundation of our family's culinary heritage. <br />Inspired by
+          our family's traditions and the desire to share our love for pizza
+          with the world, we opened
+          <span style="font-family: Leckerli One" class="fs-5"
+            >Pizza Haven!</span
+          >
+          Our vision was simple yet profound: to create a haven where people
+          could experience the true essence of Italian pizza, crafted with love,
+          authenticity, and the finest ingredients.
         </div>
-        <div class="col-md-8 rounded" id="map" style="height: 70vh"></div>
+        <div class="col-md-6">
+          <img
+            src="https://images.unsplash.com/photo-1651981075280-9a9e01acbff0?q=80&w=1426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="img-fluid lazy-img rounded"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="p-3 my-4 text-center">
+      <!-- <hr class="bg-light mx-4" /> -->
+      <div class="row align-items-center m-lg-5">
+        <div class="col-md mb-3 order-lg-last" style="font-family: DM Sans">
+          <h1>
+            <span style="font-family: Leckerli One">What we stand for!</span>
+          </h1>
+          Our vision extends beyond the pizza itself. We envision
+          <span style="font-family: Leckerli One" class="fs-5"
+            >Pizza Haven</span
+          >
+          as a place where people come together, forging connections, and
+          creating cherished memories. Our warm and inviting atmosphere is
+          designed to foster a sense of community, where families, friends, and
+          colleagues can gather, laugh, and savor the simple pleasures of life
+          over a delicious meal.
+        </div>
+        <div class="col-md order-lg-first">
+          <img
+            src="https://images.unsplash.com/photo-1600628421066-f6bda6a7b976?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="img-fluid lazy-img rounded"
+          />
+        </div>
       </div>
     </div>
     <div class="bg-body-tertiary p-3" style="font-family: DM Sans">
@@ -98,23 +133,25 @@
             <h5>Guide</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
-                <a class="nav-link p-0" href="./menu.html">Menu</a>
+                <a class="nav-link p-0" href="/routes/menu.html">Menu</a>
               </li>
               <li class="nav-item mb-2">
-                <a class="nav-link p-0" href="./reservations.html"
+                <a class="nav-link p-0" href="/routes/reservations.html"
                   >Make a Reservation</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a class="nav-link p-0" href="./testimonials.html"
+                <a class="nav-link p-0" href="/routes/testimonials.html"
                   >Testimonials</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a class="nav-link p-0" href="./about.html">About Us</a>
+                <a class="nav-link p-0" href="/routes/about.html">About Us</a>
               </li>
               <li class="nav-item mb-2">
-                <a class="nav-link p-0" href="./locations.html">Locations</a>
+                <a class="nav-link p-0" href="/routes/locations.html"
+                  >Locations</a
+                >
               </li>
             </ul>
           </div>
@@ -166,7 +203,7 @@
                 </a>
               </div>
               <div class="col-1">
-                <a href="mailto:" class="text-dark"
+                <a href="mailto:cm119026@gmail.com" class="text-dark"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="28"
@@ -193,7 +230,7 @@
               src="apple-touch-icon.png"
               alt=""
               style="height: 2rem"
-              class="img-fluid m-1"
+              class="img-fluid lazy-img m-1"
             />
             &copy; 2024 Pizza Haven. All rights reserved.
           </p>

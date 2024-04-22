@@ -14,8 +14,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Leckerli One|Open Sans|Montserrat|DM Sans"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <script
+      type="text/javascript"
+      src="https://assets.calendly.com/assets/external/widget.js"
+      async
+    ></script>
   </head>
   <body>
     <nav class="navbar sticky-top navbar-expand-lg bg-warning">
@@ -41,137 +45,40 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="./index.html">Home</a>
+              <a class="nav-link" href="/routes/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./menu.html">Menu</a>
+              <a class="nav-link" href="/routes/menu.html">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./reservations.html">Reservations</a>
+              <a class="nav-link active" href="/routes/reservations.html"
+                >Reservations</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./about.html">About Us</a>
+              <a class="nav-link" href="/routes/about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./testimonials.html"
+              <a class="nav-link" href="/routes/testimonials.html"
                 >Testimonials</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./locations.html">Locations</a>
+              <a class="nav-link" href="/routes/locations.html">Locations</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <!-- Calendly inline widget begin -->
     <div
-      id="carouselExampleRide"
-      class="carousel slide text-center carousel-dark my-4 container"
-      data-bs-ride="true"
-    >
-      <h1 class="display-4 my-5" style="font-family: Leckerli One">
-        What Our Customers Are Saying
-      </h1>
-      <div class="carousel-inner" style="font-family: DM Sans">
-        <div class="carousel-item active">
-          <img
-            class="rounded-circle shadow-1-strong my-4"
-            src="https://images.unsplash.com/photo-1620794108219-aedbaded4eea?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="avatar"
-            style="width: 150px"
-          />
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-8">
-              <h5 class="mb-3">Kate</h5>
-              <!-- <p>Photographer</p> -->
-              <p class="text-dark">
-                <i class="fas fa-quote-left pe-2"></i>
-                The moment I stepped into
-                <span style="font-family: Leckerli One">Pizza Haven</span>, I
-                knew I was in for a treat. The pizza exceeded all my
-                expectations! This place has become my go-to spot for a
-                delicious and satisfying pizza experience.
-                <i class="fas fa-quote-right pe-2"></i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            class="rounded-circle shadow-1-strong mb-4"
-            src="https://images.unsplash.com/photo-1567784177951-6fa58317e16b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="avatar"
-            style="width: 150px"
-          />
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-8">
-              <h5 class="mb-3">Mark</h5>
-              <!-- <p>Web Developer</p> -->
-              <p class="text-dark">
-                <i class="fas fa-quote-left pe-2"></i>
-                I finally found an authentic Italian pizza at
-                <span style="font-family: Leckerli One">Pizza Haven</span>. The
-                flavors were incredible, and the thin, chewy crust was a work of
-                art.
-                <span style="font-family: Leckerli One">Pizza Haven</span>
-                has become my favorite place for a true taste of Italy.
-                <i class="fas fa-quote-right pe-2"></i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            class="rounded-circle shadow-1-strong mb-4"
-            src="https://images.unsplash.com/photo-1614174568206-7620823e6aee?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="avatar"
-            style="width: 150px"
-          />
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-8">
-              <h5 class="mb-3">Sarah</h5>
-              <!-- <p>UX Designer</p> -->
-              <p class="text-dark">
-                <i class="fas fa-quote-left pe-2"></i>
-                As a vegetarian, finding a pizza place that caters to my needs
-                can be a challenge. But at
-                <span style="font-family: Leckerli One">Pizza Haven</span>, I
-                found a haven for pizza-loving vegetarians like myself. Their
-                Veggie Supreme pizza is simply divine.
-                <span style="font-family: Leckerli One">Pizza Haven</span>
-                has become my go-to place for delicious vegetarian pizza
-                <i class="fas fa-quote-right pe-2"></i>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev btn"
-        type="button"
-        data-bs-target="#carouselExampleRide"
-        data-bs-slide="prev"
-      >
-        <span
-          class="carousel-control-prev-icon bg-dark rounded p-3"
-          aria-hidden="true"
-        ></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleRide"
-        data-bs-slide="next"
-      >
-        <span
-          class="carousel-control-next-icon bg-dark rounded p-3"
-          aria-hidden="true"
-        ></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+      class="calendly-inline-widget container"
+      data-url="https://calendly.com/nukujosh119/pizza-haven-reservations"
+      style="min-width: 320px; height: 450px"
+    ></div>
+
+    <!-- Calendly inline widget end -->
     <div class="bg-body-tertiary p-3" style="font-family: DM Sans">
       <footer class="py-2 mt-5">
         <div class="row">
@@ -179,23 +86,25 @@
             <h5>Guide</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
-                <a class="nav-link p-0" href="./menu.html">Menu</a>
+                <a class="nav-link p-0" href="/routes/menu.html">Menu</a>
               </li>
               <li class="nav-item mb-2">
-                <a class="nav-link p-0" href="./reservations.html"
+                <a class="nav-link p-0" href="/routes/reservations.html"
                   >Make a Reservation</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a class="nav-link p-0" href="./testimonials.html"
+                <a class="nav-link p-0" href="/routes/testimonials.html"
                   >Testimonials</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a class="nav-link p-0" href="./about.html">About Us</a>
+                <a class="nav-link p-0" href="/routes/about.html">About Us</a>
               </li>
               <li class="nav-item mb-2">
-                <a class="nav-link p-0" href="./locations.html">Locations</a>
+                <a class="nav-link p-0" href="/routes/locations.html"
+                  >Locations</a
+                >
               </li>
             </ul>
           </div>
@@ -281,6 +190,7 @@
         </div>
       </footer>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
